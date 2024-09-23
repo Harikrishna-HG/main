@@ -24,7 +24,7 @@ app.use("/api/bus", busRoute);
 app.use(errorMiddleware);
 
 
-const port = 5000;
+const port = process.env.PORT ||  5000;
 
 connectDb().then(() => {
 app.listen(port, () => {
