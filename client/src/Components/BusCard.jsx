@@ -8,7 +8,7 @@ const BusCard = () => {
   useEffect(() => {
     const fetchBuses = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/bus", {
+        const response = await fetch("https://main-yxw3.onrender.com", {
           method: "GET",
         });
         if (!response.ok) {
